@@ -89,6 +89,10 @@ def print_text(text, x, y, font_type = 'font1.ttf', font_color = (0,0,0), font_s
     text = font_type.render(text, True, font_color)
     display.blit(text, (x, y))
 
+# 124123123
+# 125 1-2431203
+# 02131023103120
+
 
 run_game()
 
