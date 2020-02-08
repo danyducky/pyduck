@@ -1,11 +1,35 @@
-087 # Our text for master
+import pygame
+from Constants import *
+from Player import *
+pygame.init()
 
-A = 10
-B = 90
-E = 285
-# It was College Branch
+class main():
+    def __init__(self, display):
+        self.display = display
+        self.player = Player('danyducky')
+        self.background = pygame.image.load('background.jpg')
+        self.run_game = True
+        self.main_loop()
 
-C = 20
-D = 'Help me pls'
-dasdasd
-print(C,D) asdasdasd
+    def render(self):
+        """Прорисовка всех объектов и персонажа"""
+        self.display.blit(self.background, (0, 0))
+        self.player.render(display)
+        pygame.display.flip()
+
+    def main_loop(self):
+        """Основной цикл игры"""
+        while self.run_game == True:
+            self.render()
+            events = pygame.event.get()
+            for event in events:
+                if event.type == pygame.QUIT:
+                    quit()
+            key = pygame.key.get_pressed()
+            if key[pygame.K_ESCAPE]:
+                quit()
+
+
+display = pygame.display.set_mode((width, height))
+game = main(display)
+
