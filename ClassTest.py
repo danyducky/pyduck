@@ -59,18 +59,9 @@ class jenya():
     def vlad(self):
         print("Нам пiзда")
 
-            def main_loop(self):
-                """Основной цикл игры"""
-                while self.run_game == True:
-                    self.render()
-                    events = pygame.event.get()
-                    for event in events:
-                        if event.type == pygame.QUIT:
-                            quit()
-                    key = pygame.key.get_pressed()
-                    if key[pygame.K_ESCAPE]:
-                        quit()
-
+            # Тут был main_loop
+        # Пока что я нихуя не понимаю, парень!
+            
 
 def print_text(text, x, y, font_type = 'font1.ttf', font_color = (0,0,0), font_size = 20):
     font_type = pygame.font.Font(font_type, font_size)
