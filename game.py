@@ -1,20 +1,22 @@
 import pygame
 from Constants import *
-
+from Player import *
 
 class Main():
     """Основной класс"""
     def __init__(self, screen):
         self.screen = screen
         self.run_game = True
-        self.x = start_x
-        self.y = start_y
-        self.background = pygame.image.load(background)
+        self.player = Player()
+        self.background = background
         self.main_loop()
 
     def render(self):
         """Прорисовка всего-всего"""
         self.screen.blit(self.background, (0, 0))
+        self.screen.blit(self.player.image, (self.player.x, self.player.y))
+        self.player.move()
+        self.player.direction(screen)
         pygame.display.flip()
 
 
