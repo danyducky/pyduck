@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4102eb2-221d-41be-aa38-525e0c47161b" name="Default Changelist" comment="">
+    <list default="true" id="b8f594c6-46c0-4383-b68f-e91085d5568c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/Constants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Player.py" beforeDir="false" afterPath="$PROJECT_DIR$/Player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +26,27 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Python.game">
+    <configuration name="Constants" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pyduck" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Constants.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Player" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pyduck" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -70,6 +93,7 @@
       <list>
         <item itemvalue="Python.game" />
         <item itemvalue="Python.Player" />
+        <item itemvalue="Python.Constants" />
       </list>
     </recent_temporary>
   </component>
@@ -90,7 +114,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e4102eb2-221d-41be-aa38-525e0c47161b" name="Default Changelist" comment="" />
+      <changelist id="b8f594c6-46c0-4383-b68f-e91085d5568c" name="Default Changelist" comment="" />
       <created>1581163296137</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -103,21 +127,41 @@
       <screen x="0" y="31" width="1280" height="689" />
     </state>
     <state x="421" y="130" key="FileChooserDialogImpl/0.31.1280.689@0.31.1280.689" timestamp="1581171961912" />
-    <state width="1259" height="166" key="GridCell.Tab.0.bottom" timestamp="1581176101227">
+    <state width="1259" height="208" key="GridCell.Tab.0.bottom" timestamp="1581187679463">
       <screen x="0" y="31" width="1280" height="689" />
     </state>
-    <state width="1259" height="166" key="GridCell.Tab.0.bottom/0.31.1280.689@0.31.1280.689" timestamp="1581176101227" />
-    <state width="1259" height="166" key="GridCell.Tab.0.center" timestamp="1581176101227">
+    <state width="1259" height="208" key="GridCell.Tab.0.bottom/0.31.1280.689@0.31.1280.689" timestamp="1581187679463" />
+    <state width="1259" height="208" key="GridCell.Tab.0.center" timestamp="1581187679463">
       <screen x="0" y="31" width="1280" height="689" />
     </state>
-    <state width="1259" height="166" key="GridCell.Tab.0.center/0.31.1280.689@0.31.1280.689" timestamp="1581176101227" />
-    <state width="1259" height="166" key="GridCell.Tab.0.left" timestamp="1581176101227">
+    <state width="1259" height="208" key="GridCell.Tab.0.center/0.31.1280.689@0.31.1280.689" timestamp="1581187679463" />
+    <state width="1259" height="208" key="GridCell.Tab.0.left" timestamp="1581187679463">
       <screen x="0" y="31" width="1280" height="689" />
     </state>
-    <state width="1259" height="166" key="GridCell.Tab.0.left/0.31.1280.689@0.31.1280.689" timestamp="1581176101227" />
-    <state width="1259" height="166" key="GridCell.Tab.0.right" timestamp="1581176101227">
+    <state width="1259" height="208" key="GridCell.Tab.0.left/0.31.1280.689@0.31.1280.689" timestamp="1581187679463" />
+    <state width="1259" height="208" key="GridCell.Tab.0.right" timestamp="1581187679463">
       <screen x="0" y="31" width="1280" height="689" />
     </state>
-    <state width="1259" height="166" key="GridCell.Tab.0.right/0.31.1280.689@0.31.1280.689" timestamp="1581176101227" />
+    <state width="1259" height="208" key="GridCell.Tab.0.right/0.31.1280.689@0.31.1280.689" timestamp="1581187679463" />
+    <state width="1259" height="208" key="GridCell.Tab.1.bottom" timestamp="1581187679463">
+      <screen x="0" y="31" width="1280" height="689" />
+    </state>
+    <state width="1259" height="208" key="GridCell.Tab.1.bottom/0.31.1280.689@0.31.1280.689" timestamp="1581187679463" />
+    <state width="1259" height="208" key="GridCell.Tab.1.center" timestamp="1581187679463">
+      <screen x="0" y="31" width="1280" height="689" />
+    </state>
+    <state width="1259" height="208" key="GridCell.Tab.1.center/0.31.1280.689@0.31.1280.689" timestamp="1581187679463" />
+    <state width="1259" height="208" key="GridCell.Tab.1.left" timestamp="1581187679463">
+      <screen x="0" y="31" width="1280" height="689" />
+    </state>
+    <state width="1259" height="208" key="GridCell.Tab.1.left/0.31.1280.689@0.31.1280.689" timestamp="1581187679463" />
+    <state width="1259" height="208" key="GridCell.Tab.1.right" timestamp="1581187679463">
+      <screen x="0" y="31" width="1280" height="689" />
+    </state>
+    <state width="1259" height="208" key="GridCell.Tab.1.right/0.31.1280.689@0.31.1280.689" timestamp="1581187679463" />
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1581185591104">
+      <screen x="0" y="31" width="1280" height="689" />
+    </state>
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.31.1280.689@0.31.1280.689" timestamp="1581185591104" />
   </component>
 </project>
