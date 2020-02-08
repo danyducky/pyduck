@@ -8,3 +8,9 @@ for i in range():
 """dadadadada
 """
 # Пися
+
+# изменяемое
+
+p = 9
+d = []
+print("Hello world")
