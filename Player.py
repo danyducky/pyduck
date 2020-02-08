@@ -22,3 +22,12 @@ class Player():
         mouse = pygame.mouse.get_pos()
         if mouse[0] < self.x:
              screen.blit(playerL, (self.x, self.y))
+
+        if self.x <= 0:
+            self.x = 0
+        if self.y <= 0:
+            self.y = 0
+        if self.x >= width - 50:
+            self.x = width - 50
+        if self.y >= height - 80:
+            self.y = height - 80
