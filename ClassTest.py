@@ -1,8 +1,6 @@
-fghjnfknkdsFksdjFksdjfndB = 55
-A = 10
+# Master Branch
 
-# THIS IS = Master
-# This is newbranch2asd
-slksakdjn
-# This is NewBranch
-C = 99
+A = 10
+B = 20
+
+print(A,B)
