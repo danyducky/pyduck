@@ -7,16 +7,14 @@ class Main():
     def __init__(self, screen):
         self.screen = screen
         self.run_game = True
-        self.player = Player()
+        self.player = player()
         self.background = background
         self.main_loop()
 
     def render(self):
         """Прорисовка всего-всего"""
         self.screen.blit(self.background, (0, 0))
-        self.screen.blit(self.player.image, (self.player.x, self.player.y))
-        self.player.move()
-        self.player.direction(screen)
+        self.player.move(screen)
         pygame.display.flip()
 
 
@@ -29,6 +27,8 @@ class Main():
                     self.run_game = False
                 if event.type == pygame.K_ESCAPE:
                     self.run_game = False
+
+            clock.tick(60)
 
 
 

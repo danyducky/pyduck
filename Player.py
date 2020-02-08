@@ -1,27 +1,35 @@
 import pygame
 from Constants import *
 
-class Player():
+class player():
     def __init__(self):
         self.x = start_x
         self.y = start_y
-        self.image = player
+        self.leftImage = pack_L
+        self.rightImage = pack_R
+        self.afkImage = player_img
+        self.counter_L = 0
+        self.counter_R = 0
 
-    def move(self):
+
+    def move(self, screen):
+        """Перемещение влево/вправо и анимация движения персонажа"""
+        """Ограничение выхода за пределы окна"""
         key = pygame.key.get_pressed()
-        if key[pygame.K_a]:
+        if key[pygame.K_a] == 0 and key[pygame.K_d] == 0:
+            screen.blit(self.afkImage, (self.x, self.y))
+        if key[pygame.K_a] == 1:
             self.x -= speed
+            self.counter_L += 1
+            screen.blit(self.leftImage[self.counter_L // 3], (self.x, self.y))
+            if self.counter_L == 9:
+                self.counter_L = 0
         if key[pygame.K_d]:
             self.x += speed
-        if key[pygame.K_s]:
-            self.y += speed
-        if key[pygame.K_w]:
-            self.y -= speed
-
-    def direction(self, screen):
-        mouse = pygame.mouse.get_pos()
-        if mouse[0] < self.x:
-             screen.blit(playerL, (self.x, self.y))
+            self.counter_R += 1
+            screen.blit(self.rightImage[self.counter_R // 3], (self.x, self.y))
+            if self.counter_R == 9:
+                self.counter_R = 0
 
         if self.x <= 0:
             self.x = 0
@@ -31,3 +39,4 @@ class Player():
             self.x = width - 50
         if self.y >= height - 80:
             self.y = height - 80
+
