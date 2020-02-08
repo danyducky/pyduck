@@ -58,35 +58,35 @@ class Hero():
 class jenya():
     def __init__(self, ):
 
+        from Constants import *
+        from Player import *
+        pygame.init()
 
+        class main():
+            def __init__(self, display):
+                self.display = display
+                self.player = Player('danyducky')
+                self.background = pygame.image.load('background.jpg')
+                self.run_game = True
+                self.main_loop()
 
-width = 800
-height = 600
-clock = pygame.time.Clock()
-display = pygame.display.set_mode((width, height))
-model = Hero(pygame.image.load('avatar282060_1.gif.png'), 'Kolyadin', 1, 400, 300)
-enemy = enemy(pygame.image.load('avatar282060_2_rotate2.gif.png'), 60, 80, 1)
+            def render(self):
+                """Прорисовка всех объектов и персонажа"""
+                self.display.blit(self.background, (0, 0))
+                self.player.render(display)
+                pygame.display.flip()
 
-def run_game():
-    game = True
-    while game:
-
-        key = pygame.key.get_pressed()
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                quit()
-
-        if key[pygame.K_ESCAPE]:
-            quit()
-
-        display.fill((255, 255, 255))
-        display.blit(model.hero, (model.x, model.y))
-        model.move()
-        display.blit(enemy.image, (enemy.x, enemy.y))
-        enemy.enemy_move()
-        print_text(str(model.health.health), model.x + 35, model.y - 30)
-        clock.tick(330)
-        pygame.display.update()
+            def main_loop(self):
+                """Основной цикл игры"""
+                while self.run_game == True:
+                    self.render()
+                    events = pygame.event.get()
+                    for event in events:
+                        if event.type == pygame.QUIT:
+                            quit()
+                    key = pygame.key.get_pressed()
+                    if key[pygame.K_ESCAPE]:
+                        quit()
 
 
 def print_text(text, x, y, font_type = 'font1.ttf', font_color = (0,0,0), font_size = 20):
