@@ -10,7 +10,6 @@ clock = pygame.time.Clock()
 background = pygame.image.load('data/background1.jpg')
 background = pygame.transform.scale(background, (width, height))
 player_img = pygame.image.load('data/player.png')
-player_img = pygame.transform.scale(player_img, (50, 80))
 
 
 pack_L = []
