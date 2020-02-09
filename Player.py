@@ -16,7 +16,7 @@ class player():
         """Перемещение влево/вправо и анимация движения персонажа"""
         """Ограничение выхода за пределы окна"""
         key = pygame.key.get_pressed()
-        if key[pygame.K_a] == 0 and key[pygame.K_d] == 0:
+        if key[pygame.K_d] == 0 and key[pygame.K_a] == 0:
             screen.blit(self.afkImage, (self.x, self.y))
         if key[pygame.K_a] == 1:
             self.x -= speed
