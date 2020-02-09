@@ -7,7 +7,7 @@ class Main():
     def __init__(self, screen):
         self.screen = screen
         self.run_game = True
-        self.player = player()
+        self.player = player('DanilVlad')
         self.background = background
         self.main_loop()
 
