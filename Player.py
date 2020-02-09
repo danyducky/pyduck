@@ -12,13 +12,6 @@ class player():
         self.counter_R = 0
 
 
-    def direction(self, screen):
-        mouse = pygame.mouse.get_pos()
-        if mouse[0] < self.x:
-            screen.blit(self.leftImage[0], (self.x, self.y))
-        elif mouse[0] > self.x:
-            screen.blit(self.rightImage[0], (self.x, self.y))
-
     def move(self, screen):
         """Перемещение влево/вправо и анимация движения персонажа"""
         """Ограничение выхода за пределы окна"""
@@ -33,7 +26,7 @@ class player():
                 screen.blit(self.leftImage[self.counter_L // 3], (self.x, self.y))
                 if self.counter_L == 9:
                     self.counter_L = 0
-        elif mouse[0] > self.x:
+        if mouse[0] > self.x:
             if key[pygame.K_d] == 0:
                 screen.blit(self.rightImage[0], (self.x, self.y))
             elif key[pygame.K_d]:

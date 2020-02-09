@@ -14,7 +14,6 @@ class Main():
     def render(self):
         """Прорисовка всего-всего"""
         self.screen.blit(self.background, (0, 0))
-        self.player.direction(screen)
         self.player.move(screen)
         pygame.display.flip()
 
